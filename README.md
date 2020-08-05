@@ -1,4 +1,6 @@
-# RedDragon Nutritious Noms
+<p align="center">
+<img src="https://raw.githubusercontent.com/TeamRedDragon/RedDragon-Nutritious-Noms/master/misc/reddragon-nutricious-noms-banner.png">
+</p>
 
 A mod for Minecraft that adds tons of **new food** items to the game – all made from **vanilla** Minecraft sources!
 
