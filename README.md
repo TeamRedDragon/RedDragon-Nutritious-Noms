@@ -1,10 +1,10 @@
 # RedDragon Nutritious Noms
 
-A mod for Minecraft that adds tons of new food items to the game, all made from vanilla Minecraft sources!
+A mod for Minecraft that adds tons of **new food** items to the game, all made from **vanilla** Minecraft sources!
 
-* Use new kitchen tools like knifes and mixing bowls to prepare your ingredients and cook your meat in a pan or put it on the grill.
-* Clean up your used kitchen tool and make sure your pans and pots are hot before using them.
-* Craft different kinds of cheese blocks and let them mature before having a bite.
+* Use new **kitchen tools** like knifes and mixing bowls to prepare your ingredients and cook your meat in a pan or put it on the grill.
+* **Clean up** your used kitchen tool and make sure your pans and pots are **heated up** properly before using them.
+* Craft different kinds of **cheese blocks** and let them mature before having a bite.
 * Explore over **80 different food items** with more than **60 different ingredients**.
 * Also try out the accompanying [RedDragon Gorgeous Greens](https://github.com/TeamRedDragon/RedDragon-Gorgeous-Greens) for a variety of new farm crops, fruits and vegetables.
 
