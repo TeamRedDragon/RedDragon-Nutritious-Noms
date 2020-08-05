@@ -1,6 +1,6 @@
 # RedDragon Nutritious Noms
 
-A mod for Minecraft that adds tons of **new food** items to the game – all made from **vanilla** Minecraft sources!
+A mod for Minecraft that adds tons of **new food** items to the game — all made from **vanilla** Minecraft sources!
 
 * Use new **kitchen tools** like knifes and mixing bowls to prepare your ingredients and cook your meat in a pan or put it on the grill.
 * **Clean up** your used kitchen tool and make sure your pans and pots are **heated up** properly before using them.
