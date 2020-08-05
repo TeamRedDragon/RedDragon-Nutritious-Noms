@@ -20,7 +20,7 @@ Feel free to check our companion mods that are designed to work closely together
 
 This mod runs on vanilla Minecraft without any mod dependencies! 👍
 
-Keep in mind that this mod does require the [Fabric mod loader](https://fabricmc.net/use/). Please check the [Fabric documentation](https://fabricmc.net/wiki/install) for more details.
+Keep in mind that this mod does require the [Fabric mod loader](https://fabricmc.net/use/). Please check [Installing Fabric](https://fabricmc.net/wiki/install) for more details.
 
 # Installation
 
