@@ -1,0 +1,68 @@
+{
+"itemGroup.nutritiousnoms": "RedDragon - Nutritious Noms",
+
+
+"item.nutritiousnoms.choco_cake": "Chocolate cake",
+"item.nutritiousnoms.choco_donut": "Chocolate donut",
+"item.nutritiousnoms.choco_muffin": "Chocolate muffin",
+"item.nutritiousnoms.croissant": "Croissant",
+"item.nutritiousnoms.cruller": "Cruller",
+"item.nutritiousnoms.egg_toast": "Egg toast",
+"item.nutritiousnoms.frosted_donut": "Frosted donut",
+"item.nutritiousnoms.hotdog": "Hotdog",
+"item.nutritiousnoms.jelly_donut": "Jelly donut",
+"item.nutritiousnoms.pretzel": "Pretzel",
+"item.nutritiousnoms.toast_slice": "Toast slice",
+
+
+// Diary Products
+// Milk
+"item.nutritiousnoms.pasteurized_milk": "Pasteurized milk",
+"item.nutritiousnoms.skimmed_milk": "Skimmed milk",
+"item.nutritiousnoms.curd_cheese": "Curd_cheese",
+"item.nutritiousnoms.pasteurized_skimmed_milk": "Pasteurized skimmed milk",
+"item.nutritiousnoms.heavy_cream": "Heavy cream",
+"item.nutritiousnoms.whipped_cream": "Whipped cream",
+"item.nutritiousnoms.sour_cream": "Sour cream",
+"item.nutritiousnoms.cream_cheese": "Cream cheese",
+"item.nutritiousnoms.yoghurt": "Yoghurt",
+"item.nutritiousnoms.butter": "Butter",
+"item.nutritiousnoms.mozzerella": "Mozzerella",
+"item.nutritiousnoms.mozzerella_slices": "Mozzerella slices",
+"item.nutritiousnoms.grated_mozzerella": "Grated Mozzerella",
+"item.nutritiousnoms.havarti": "Havarti",
+"item.nutritiousnoms.havarti_slices": "Havarti slices",
+"item.nutritiousnoms.grated_havarti": "Grated Havarti",
+"item.nutritiousnoms.swiss_cheese": "Swiss cheese",
+"item.nutritiousnoms.swiss_cheese_slices": "Swiss cheese slices",
+"item.nutritiousnoms.grated_swiss_cheese": "Grated Swiss cheese",
+"item.nutritiousnoms.gorgonzola": "Gorgonzola",
+"item.nutritiousnoms.gorgonzola_slices": "Gorgonzola slices",
+"item.nutritiousnoms.grated_gorgonzola": "Grated Gorgonzola",
+"item.nutritiousnoms.feta": "Feta",
+"item.nutritiousnoms.feta_slices": "Feta slices",
+"item.nutritiousnoms.grated_feta": "Grated Feta",
+"item.nutritiousnoms.parmesan": "Parmesan",
+"item.nutritiousnoms.parmesan_slices": "Parmesan slices",
+"item.nutritiousnoms.grated_parmesan": "Grated Parmesan",
+"item.nutritiousnoms.cheddar": "Cheddar",
+"item.nutritiousnoms.cheddar_slices": "Cheddar Slices",
+"item.nutritiousnoms.grated_cheddar": "Grated Cheddar",
+"item.nutritiousnoms.cheerus": "Cheerus",
+"item.nutritiousnoms.cheerus_slices": "Cheerus Slices",
+"item.nutritiousnoms.grated_cheerus": "Grated Cheerus",
+"item.nutritiousnoms.grated_cheese_mix": "Grated Cheese Mix",
+
+"block.nutritiousnoms.cheddar_wheel": "Cheddar wheel",
+"block.nutritiousnoms.cheerus_pot": "Cheerus pot",
+"block.nutritiousnoms.feta_pot": "Feta pot",
+"block.nutritiousnoms.gorgonzola_wheel": "Gorgonzola wheel",
+"block.nutritiousnoms.havarti_wheel": "Gouda wheel",
+"block.nutritiousnoms.mozzerella_pot": "Mozzerella pot",
+"block.nutritiousnoms.parmesan_wheel": "Parmesan wheel",
+"block.nutritiousnoms.swiss_cheese_wheel": "Swiss cheese wheel",
+
+"block.nutritiousnoms.fermenter": "Fermenter",
+"block.nutritiousnoms.press": "Press"
+
+}

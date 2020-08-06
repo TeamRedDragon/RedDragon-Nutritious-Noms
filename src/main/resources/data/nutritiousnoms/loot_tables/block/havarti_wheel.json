@@ -1,0 +1,43 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+          			"children": [
+            			{
+              				"type": "minecraft:item",
+              				"name": "nutritiousnoms:havarti",
+              				"functions": [
+				                {
+				                  "function": "minecraft:set_count",
+				                  "count": 8
+				                }
+				             ],
+              				"conditions": [
+               					{
+									"condition": "minecraft:block_state_property",
+					                "block": "nutritiousnoms:havarti_wheel",
+					                "properties": {
+					                		"matureness": "11"
+                  					}
+                				}
+              				]
+                       },
+            			{
+              				"type": "minecraft:item",
+              				"name": "nutritiousnoms:havarti_wheel"
+                       }
+                    ]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		}
+	]
+}

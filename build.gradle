@@ -22,7 +22,9 @@ dependencies {
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
 	
-		modApi 'reddragon:RedDragon-API:1.0.0'
+	def redDragonApiVersion = 'reddragon:RedDragon-API:1.0.0'
+	modApi redDragonApiVersion
+    include redDragonApiVersion
 	
 }
 
@@ -61,7 +63,7 @@ task sourcesJar(type: Jar, dependsOn: classes) {
 }
 
 jar {
-	from "LICENSE"
+	from "LICENSE.md"
 }
 
 // configure the maven publication

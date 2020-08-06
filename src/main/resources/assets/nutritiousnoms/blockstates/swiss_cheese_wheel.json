@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "matureness=0": {
+      "model": "nutritiousnoms:block/immature_swiss_cheese"
+    },
+    "matureness=1": {
+      "model": "nutritiousnoms:block/immature_swiss_cheese"
+    },
+    "matureness=2": {
+      "model": "nutritiousnoms:block/immature_swiss_cheese"
+    },
+    "matureness=3": {
+      "model": "nutritiousnoms:block/immature_swiss_cheese"
+    },
+    "matureness=4": {
+      "model": "nutritiousnoms:block/immature_swiss_cheese"
+    },
+    "matureness=5": {
+      "model": "nutritiousnoms:block/immature_swiss_cheese"
+    },
+    "matureness=6": {
+      "model": "nutritiousnoms:block/immature_swiss_cheese"
+    },
+    "matureness=7": {
+      "model": "nutritiousnoms:block/immature_swiss_cheese"
+    },
+    "matureness=8": {
+      "model": "nutritiousnoms:block/immature_swiss_cheese"
+    },
+    "matureness=9": {
+      "model": "nutritiousnoms:block/immature_swiss_cheese"
+    },
+    "matureness=10": {
+      "model": "nutritiousnoms:block/immature_swiss_cheese"
+    },
+    "matureness=11": {
+      "model": "nutritiousnoms:block/mature_swiss_cheese"
+    }
+  }
+}

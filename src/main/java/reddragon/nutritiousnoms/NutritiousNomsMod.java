@@ -4,24 +4,28 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.item.ItemGroup;
+import reddragon.api.utils.ItemGroupUtils;
+import reddragon.nutritiousnoms.content.NutritiousNomsBlock;
+import reddragon.nutritiousnoms.content.NutritiousNomsItem;
 
 public class NutritiousNomsMod implements ModInitializer {
 
 	public static final String NAMESPACE = "nutritiousnoms";
 
+	public static final ItemGroup ITEMGROUP = ItemGroupUtils.createItemGroup(NAMESPACE,
+			NutritiousNomsBlock.GORGONZOLA_WHEEL.getBlock());
+
 	public static final Logger LOG = LogManager.getLogger(NAMESPACE);
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		for (final ItemRegistry item : ItemRegistry.values()) {
-			Registry.register(Registry.ITEM, new Identifier(NAMESPACE, item.getItemName()), item.getItem());
+		for (final NutritiousNomsItem item : NutritiousNomsItem.values()) {
+			item.getConfig().register(NAMESPACE, item.name());
 		}
 
+		for (NutritiousNomsBlock block : NutritiousNomsBlock.values()) {
+			block.getConfig().register(NAMESPACE, ITEMGROUP, block.name());
+		}
 	}
 }

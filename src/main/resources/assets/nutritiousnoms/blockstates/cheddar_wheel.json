@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "matureness=0": {
+      "model": "nutritiousnoms:block/immature_cheddar"
+    },
+    "matureness=1": {
+      "model": "nutritiousnoms:block/immature_cheddar"
+    },
+    "matureness=2": {
+      "model": "nutritiousnoms:block/immature_cheddar"
+    },
+    "matureness=3": {
+      "model": "nutritiousnoms:block/immature_cheddar"
+    },
+    "matureness=4": {
+      "model": "nutritiousnoms:block/immature_cheddar"
+    },
+    "matureness=5": {
+      "model": "nutritiousnoms:block/immature_cheddar"
+    },
+    "matureness=6": {
+      "model": "nutritiousnoms:block/immature_cheddar"
+    },
+    "matureness=7": {
+      "model": "nutritiousnoms:block/immature_cheddar"
+    },
+    "matureness=8": {
+      "model": "nutritiousnoms:block/immature_cheddar"
+    },
+    "matureness=9": {
+      "model": "nutritiousnoms:block/immature_cheddar"
+    },
+    "matureness=10": {
+      "model": "nutritiousnoms:block/immature_cheddar"
+    },
+    "matureness=11": {
+      "model": "nutritiousnoms:block/mature_cheddar"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "textures": {
+    	"all": "nutritiousnoms:block/immature_havarti"
+    },
+    "elements": [
+        {
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 8, 16 ],
+            "faces": {
+            	"down": {"uv": [0, 8, 16, 16], "texture": "#all", "cullface": "down" },
+                "north": {"uv": [1, 4, 15, 8], "texture": "#all" },
+                "east":  {"uv": [1, 4, 15, 8], "texture": "#all" },
+                "south": {"uv": [1, 4, 15, 8], "texture": "#all" },
+                "west":  {"uv": [1, 4, 15, 8], "texture": "#all" },
+                "up":    {"uv": [0, 8, 16, 16], "texture": "#all", "cullface": "up" }
+            }
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "matureness=0": {
+      "model": "nutritiousnoms:block/immature_havarti"
+    },
+    "matureness=1": {
+      "model": "nutritiousnoms:block/immature_havarti"
+    },
+    "matureness=2": {
+      "model": "nutritiousnoms:block/immature_havarti"
+    },
+    "matureness=3": {
+      "model": "nutritiousnoms:block/immature_havarti"
+    },
+    "matureness=4": {
+      "model": "nutritiousnoms:block/immature_havarti"
+    },
+    "matureness=5": {
+      "model": "nutritiousnoms:block/immature_havarti"
+    },
+    "matureness=6": {
+      "model": "nutritiousnoms:block/immature_havarti"
+    },
+    "matureness=7": {
+      "model": "nutritiousnoms:block/immature_havarti"
+    },
+    "matureness=8": {
+      "model": "nutritiousnoms:block/immature_havarti"
+    },
+    "matureness=9": {
+      "model": "nutritiousnoms:block/immature_havarti"
+    },
+    "matureness=10": {
+      "model": "nutritiousnoms:block/immature_havarti"
+    },
+    "matureness=11": {
+      "model": "nutritiousnoms:block/mature_havarti"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "matureness=0": {
+      "model": "nutritiousnoms:block/immature_gorgonzola"
+    },
+    "matureness=1": {
+      "model": "nutritiousnoms:block/immature_gorgonzola"
+    },
+    "matureness=2": {
+      "model": "nutritiousnoms:block/immature_gorgonzola"
+    },
+    "matureness=3": {
+      "model": "nutritiousnoms:block/immature_gorgonzola"
+    },
+    "matureness=4": {
+      "model": "nutritiousnoms:block/immature_gorgonzola"
+    },
+    "matureness=5": {
+      "model": "nutritiousnoms:block/immature_gorgonzola"
+    },
+    "matureness=6": {
+      "model": "nutritiousnoms:block/immature_gorgonzola"
+    },
+    "matureness=7": {
+      "model": "nutritiousnoms:block/immature_gorgonzola"
+    },
+    "matureness=8": {
+      "model": "nutritiousnoms:block/immature_gorgonzola"
+    },
+    "matureness=9": {
+      "model": "nutritiousnoms:block/immature_gorgonzola"
+    },
+    "matureness=10": {
+      "model": "nutritiousnoms:block/immature_gorgonzola"
+    },
+    "matureness=11": {
+      "model": "nutritiousnoms:block/mature_gorgonzola"
+    }
+  }
+}
