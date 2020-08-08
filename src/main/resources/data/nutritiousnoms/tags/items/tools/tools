@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "nutritiousnoms:mixing_bowl",
+    "nutritiousnoms:dirty_mixing_bowl",
+    "nutritiousnoms:pan",
+    "nutritiousnoms:dirty_pan",
+    "nutritiousnoms:hot_pan",
+    "nutritiousnoms:pot",
+    "nutritiousnoms:dirty_pot",
+    "nutritiousnoms:hot_pot",
+    "nutritiousnoms:knife",
+    "nutritiousnoms:drity_knife",
+ 	"nutritiousnoms:mortar_and_pestle"
+  ]
+}

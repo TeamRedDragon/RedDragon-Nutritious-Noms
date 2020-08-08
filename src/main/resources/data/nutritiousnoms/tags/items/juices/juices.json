@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "nutritiousnoms:apple_juice",
+    "nutritiousnoms:sweet_berry_juice",
+    "nutritiousnoms:melon_juice",
+    "nutritiousnoms:chorus_juice"
+  ]
+}

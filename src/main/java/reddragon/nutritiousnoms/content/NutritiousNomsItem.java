@@ -39,6 +39,7 @@ public enum NutritiousNomsItem implements ItemHolder {
 	PASTEURIZED_MILK(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build()),
 	SKIMMED_MILK(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build()),
 	CURD_CHEESE(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build()),
+	COTTAGE_CHEESE(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build()),
 	PASTEURIZED_SKIMMED_MILK(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build()),
 	HEAVY_CREAM(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build()),
 	WHIPPED_CREAM(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build()),

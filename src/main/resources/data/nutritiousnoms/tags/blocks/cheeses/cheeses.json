@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "nutritiousnoms:cheddar",
+    "nutritiousnoms:cheerus",
+    "nutritiousnoms:feta",
+    "nutritiousnoms:gorgonzola",
+    "nutritiousnoms:havarti",
+    "nutritiousnoms:mozzerella",
+    "nutritiousnoms:parmesan",
+    "nutritiousnoms:swiss_cheese"   
+  ]
+}

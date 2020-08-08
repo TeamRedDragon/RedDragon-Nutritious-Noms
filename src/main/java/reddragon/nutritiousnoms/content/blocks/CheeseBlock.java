@@ -7,11 +7,15 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
+import net.minecraft.block.ShapeContext;
+import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager.Builder;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 
@@ -40,11 +44,31 @@ public class CheeseBlock extends Block {
 	public static final IntProperty MATURENESS = IntProperty.of("matureness", 0, MAX_MATURENESS);
 
 	private final float mature_chance;
+	protected static final VoxelShape SHAPE;
+
+	static {
+		SHAPE = Block.createCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 14.0D, 15.0D);
+	}
+
+	@Override
+	public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+		return SHAPE;
+	}
+
+	@Override
+	public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+		return world.getBlockState(pos.down()).getMaterial().isSolid();
+	}
 
 	@Override
 	protected void appendProperties(Builder<Block, BlockState> builder) {
 		super.appendProperties(builder);
 		builder.add(MATURENESS);
+	}
+
+	@Override
+	public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
+		return false;
 	}
 
 	public CheeseBlock(Settings settings, final float mature_months) {
@@ -62,14 +86,12 @@ public class CheeseBlock extends Block {
 	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
 		int matureness = state.get(MATURENESS);
 		if (matureness < MAX_MATURENESS) {
-			if (isAdjacentLit(world, pos)) {
-				return;
-			} else if (isOnDirt(world, pos) || isWaterNearby(world, pos) || world.hasRain(pos.up())) {
+			if (isOnDirty(world, pos) || isWaterNearby(world, pos) || world.hasRain(pos.up())) {
 				if (world.random.nextFloat() <= MOLD_CHANCE) {
 					mold(state, world, pos);
 					return;
 				}
-			} else if (world.random.nextFloat() <= mature_chance) {
+			} else if (!isAdjacentLit(world, pos) && world.random.nextFloat() <= mature_chance) {
 				world.setBlockState(pos, state.with(MATURENESS, matureness + 1), 2);
 				return;
 			}
@@ -95,11 +117,11 @@ public class CheeseBlock extends Block {
 		return true;
 	}
 
-	private static boolean isOnDirt(WorldView world, BlockPos pos) {
+	private static boolean isOnDirty(WorldView world, BlockPos pos) {
 		Material groundMaterial = world.getBlockState(pos.down()).getMaterial();
-		return (groundMaterial != Material.SOIL
-				|| groundMaterial != Material.SOLID_ORGANIC
-				|| groundMaterial != Material.ICE);
+		return (groundMaterial == Material.SOIL
+				|| groundMaterial == Material.SOLID_ORGANIC
+				|| groundMaterial == Material.ORGANIC_PRODUCT);
 	}
 
 	private static boolean isAdjacentLit(WorldView world, BlockPos pos) {

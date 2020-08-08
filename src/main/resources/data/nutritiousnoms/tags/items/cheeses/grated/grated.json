@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "nutritiousnoms:grated_cheddar",
+    "nutritiousnoms:grated_cheerus",
+    "nutritiousnoms:grated_feta",
+    "nutritiousnoms:grated_gorgonzola",
+    "nutritiousnoms:grated_havarti",
+    "nutritiousnoms:grated_mozzerella",
+    "nutritiousnoms:grated_parmesan",
+    "nutritiousnoms:grated_swiss_cheese"   
+  ]
+}

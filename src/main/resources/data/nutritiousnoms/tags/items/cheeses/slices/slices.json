@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "nutritiousnoms:cheddar_slice",
+    "nutritiousnoms:cheerus_slice",
+    "nutritiousnoms:feta_slice",
+    "nutritiousnoms:gorgonzola_slice",
+    "nutritiousnoms:havarti_slice",
+    "nutritiousnoms:mozzerella_slice",
+    "nutritiousnoms:parmesan_slice",
+    "nutritiousnoms:swiss_cheese_slice"   
+  ]
+}
