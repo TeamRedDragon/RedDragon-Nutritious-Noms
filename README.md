@@ -1,24 +1,33 @@
-# RedDragon Nutritious Noms
+<p align="center">
+<img src="https://raw.githubusercontent.com/TeamRedDragon/RedDragon-Nutritious-Noms/master/misc/reddragon-nutricious-noms-banner.png">
+</p>
 
-A fabric-based mod for Minecraft that adds all new food to the game made from vanilla sources!
+A mod for Minecraft that adds tons of **new food** items to the game – all made from **vanilla** Minecraft sources!
 
-* Use some kitchen tools like knifes and mixing bowls to prepare your ingredients and cook your meats on a hot pan or grill
-* Clean up your used kitchen tool and make sure your pans and pots are hot
-* Make different kinds of cheese blocks and let them mature before using them
-* Craft over **80 different foods** with over **60 different ingredients**  
-
-* Try out RedDragon Gorgeous Greens for much more crops, fruits, ingredients and foods
+* Use new **kitchen tools** like knifes and mixing bowls to prepare your ingredients and cook your meat in a pan or put it on the grill.
+* **Clean up** your used kitchen tool and make sure your pans and pots are **heated up** properly before using them.
+* Craft different kinds of **cheese blocks** and let them mature before having a bite.
+* Explore over **80 different food items** with more than **60 different ingredients**.
+* Also try out the accompanying [RedDragon Gorgeous Greens](https://github.com/TeamRedDragon/RedDragon-Gorgeous-Greens) for a variety of new farm crops, fruits and vegetables.
 
 # Part of the RedDragon mod pack
 Feel free to check our companion mods that are designed to work closely together:
 
-* RedDragon Gorgeous Greens \[In Concept\]
+* [RedDragon Gorgeous Greens](https://github.com/TeamRedDragon/RedDragon-Gorgeous-Greens)
 * **RedDragon Nutritious Noms**
+* [RedDragon Food Factory](https://github.com/TeamRedDragon/RedDragon-Food-Factory)
 * [RedDragon Marvelous Machines](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines)
-* RedDragon Food Factory \[In Concept\]
 
-## Dependencies
+# Dependencies
 
-To run this mod you need to have the following dependencies:
+This mod runs on vanilla Minecraft without any mod dependencies! 👍
 
-* [RedDragon API](https://github.com/TeamRedDragon/RedDragonAPI)
+Keep in mind that this mod does require the [Fabric mod loader](https://fabricmc.net/use/). Please check [Installing Fabric](https://fabricmc.net/wiki/install) for more details.
+
+# Installation
+
+Download a matching [release build](https://github.com/TeamRedDragon/RedDragon-Nutritious-Noms/releases) for your Minecraft version and drop the `reddragon-marvelousmachines.jar` file into your Minecraft `mods` folder.
+
+# Disclaimer
+
+This is not an official Minecraft product. This is not approved by or associated with Mojang.
