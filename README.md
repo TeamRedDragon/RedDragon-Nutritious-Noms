@@ -26,7 +26,7 @@ This mod runs on vanilla Minecraft without any mod dependencies! 👍
 Keep in mind that this mod does require the [Fabric mod loader](https://fabricmc.net/use/). Please check [Installing Fabric](https://fabricmc.net/wiki/install) for more details.
 
 # Installation
-Download a matching [release build](https://github.com/TeamRedDragon/RedDragon-Nutritious-Noms/releases) for your Minecraft version and drop the `reddragon-marvelousmachines.jar` file into your Minecraft `mods` folder.
+Download a matching [release build](https://github.com/TeamRedDragon/RedDragon-Nutritious-Noms/releases) for your Minecraft version and drop the `reddragon-nutritiousnoms.jar` file into your Minecraft `mods` folder.
 
 # Disclaimer
 This is not an official Minecraft product. This is not approved by or associated with Mojang.
