@@ -1,8 +1,5 @@
 package reddragon.nutritiousnoms.content;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
-
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
@@ -97,40 +94,16 @@ public enum NutritiousNomsItem implements ItemHolder {
 			.statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 4), 1f).build()),
 	GRATED_CHEESE_MIX(new FoodComponent.Builder().hunger(3).saturationModifier(3F).build());
 
+    private static final int MAX_COUNT = 64;
+
 	private final ModItemConfig config;
 
-	private NutritiousNomsItem(ModItemConfig config, boolean reflect) {
-		this(config);
-		if (!reflect) {
-			return;
-		}
-		try {
-			Field field = config.getItem().getClass().getDeclaredField("field_8008");
-
-			field.setAccessible(true);
-
-			Field modifiersField = Field.class.getDeclaredField("modifiers");
-			modifiersField.setAccessible(true);
-			modifiersField.setInt(field, field.getModifiers() & ~Modifier.FINAL);
-
-			field.set(config.getItem(), config.getItem());
-		} catch (NoSuchFieldException e) {
-			e.printStackTrace();
-		} catch (SecurityException e) {
-			e.printStackTrace();
-		} catch (IllegalArgumentException e) {
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			e.printStackTrace();
-		}
-	}
-
-	private NutritiousNomsItem(ModItemConfig config) {
+	NutritiousNomsItem(ModItemConfig config) {
 		this.config = config;
 	}
 
-	private NutritiousNomsItem(FoodComponent foodComponent) {
-		config = new ModItemConfig(foodComponent);
+	NutritiousNomsItem(FoodComponent foodComponent) {
+        config = new ModItemConfig(foodComponent, MAX_COUNT);
 	}
 
 	@Override

@@ -1,19 +1,19 @@
 package reddragon.nutritiousnoms.content.blocks;
 
-import java.util.Iterator;
-import java.util.Random;
+
+import java.util.Set;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.Material;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.ai.pathing.NavigationType;
+import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager.Builder;
 import net.minecraft.state.property.IntProperty;
-import net.minecraft.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -41,10 +41,19 @@ public class CheeseBlock extends Block {
 	private static final int TICKS_PER_MINECRAFT_MONTH = 8 * 24000;
 	private static final float MOLD_CHANCE = 0.01f;
 
-	public static final IntProperty MATURENESS = IntProperty.of("matureness", 0, MAX_MATURENESS);
+    private static final Set<Block> SOIL_BLOCKS = Set.of(
+        Blocks.DIRT,
+        Blocks.GRASS_BLOCK,
+        Blocks.FARMLAND,
+        Blocks.PODZOL,
+        Blocks.COARSE_DIRT,
+        Blocks.MYCELIUM);
 
-	private final float mature_chance;
-	protected static final VoxelShape SHAPE;
+    public static final IntProperty MATURENESS = IntProperty.of("matureness", 0, MAX_MATURENESS);
+
+    private final float mature_chance;
+
+    protected static final VoxelShape SHAPE;
 
 	static {
 		SHAPE = Block.createCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 14.0D, 15.0D);
@@ -57,7 +66,7 @@ public class CheeseBlock extends Block {
 
 	@Override
 	public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-		return world.getBlockState(pos.down()).getMaterial().isSolid();
+        return world.getBlockState(pos.down()).isSolidBlock(world, pos);
 	}
 
 	@Override
@@ -74,7 +83,7 @@ public class CheeseBlock extends Block {
 	public CheeseBlock(Settings settings, final float mature_months) {
 		super(settings);
 		setDefaultState(stateManager.getDefaultState().with(MATURENESS, 0));
-		mature_chance = (MAX_MATURENESS + 1) / ((mature_months * TICKS_PER_MINECRAFT_MONTH) / AVERAGE_RANDOM_TICKS);
+		mature_chance = (MAX_MATURENESS + 1) / (mature_months * TICKS_PER_MINECRAFT_MONTH / AVERAGE_RANDOM_TICKS);
 	}
 
 	@Override
@@ -89,11 +98,9 @@ public class CheeseBlock extends Block {
 			if (isOnDirty(world, pos) || isWaterNearby(world, pos) || world.hasRain(pos.up())) {
 				if (world.random.nextFloat() <= MOLD_CHANCE) {
 					mold(state, world, pos);
-					return;
 				}
 			} else if (!isAdjacentLit(world, pos) && world.random.nextFloat() <= mature_chance) {
 				world.setBlockState(pos, state.with(MATURENESS, matureness + 1), 2);
-				return;
 			}
 		}
 	}
@@ -104,7 +111,7 @@ public class CheeseBlock extends Block {
 	}
 
 	private static boolean isWaterNearby(WorldView world, BlockPos pos) {
-		Iterator<BlockPos> var2 = BlockPos.iterate(pos.add(-1, -1, -1), pos.add(1, 1, 1))
+		var var2 = BlockPos.iterate(pos.add(-1, -1, -1), pos.add(1, 1, 1))
 				.iterator();
 
 		BlockPos blockPos;
@@ -118,19 +125,18 @@ public class CheeseBlock extends Block {
 	}
 
 	private static boolean isOnDirty(WorldView world, BlockPos pos) {
-		Material groundMaterial = world.getBlockState(pos.down()).getMaterial();
-		return (groundMaterial == Material.SOIL
-				|| groundMaterial == Material.SOLID_ORGANIC
-				|| groundMaterial == Material.ORGANIC_PRODUCT);
+        var groundMaterial = world.getBlockState(pos.down());
+
+        return SOIL_BLOCKS.contains(groundMaterial.getBlock());
 	}
 
 	private static boolean isAdjacentLit(WorldView world, BlockPos pos) {
-		return (world.getLightLevel(pos.up(), 0) >= 10)
-				|| (world.getLightLevel(pos.north(), 0) >= 10)
-				|| (world.getLightLevel(pos.east(), 0) >= 10)
-				|| (world.getLightLevel(pos.down(), 0) >= 10)
-				|| (world.getLightLevel(pos.south(), 0) >= 10)
-				|| (world.getLightLevel(pos.west(), 0) >= 10);
+		return world.getLightLevel(pos.up(), 0) >= 10
+				|| world.getLightLevel(pos.north(), 0) >= 10
+				|| world.getLightLevel(pos.east(), 0) >= 10
+				|| world.getLightLevel(pos.down(), 0) >= 10
+				|| world.getLightLevel(pos.south(), 0) >= 10
+				|| world.getLightLevel(pos.west(), 0) >= 10;
 	}
 
 }

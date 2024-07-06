@@ -1,10 +1,8 @@
 package reddragon.nutritiousnoms.content;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.Material;
 import net.minecraft.sound.BlockSoundGroup;
 import reddragon.api.configs.ModBlockConfig;
 import reddragon.api.content.BlockHolder;
@@ -28,15 +26,15 @@ public enum NutritiousNomsBlock implements BlockHolder {
 
 	private final ModBlockConfig config;
 
-	private NutritiousNomsBlock(ModBlockConfig config) {
+	NutritiousNomsBlock(ModBlockConfig config) {
 		this.config = config;
 	}
 
-	private NutritiousNomsBlock(FabricBlockSettings settings) {
+	NutritiousNomsBlock(FabricBlockSettings settings) {
 		this(new ModBlockConfig(settings));
 	}
 
-	private NutritiousNomsBlock(CheeseBlock block) {
+	NutritiousNomsBlock(CheeseBlock block) {
 		config = new ModBlockConfig(block);
 	}
 
@@ -64,11 +62,13 @@ public enum NutritiousNomsBlock implements BlockHolder {
 		}
 
 		public CheeseBlock build() {
-			return new CheeseBlock(FabricBlockSettings.of(Material.ORGANIC_PRODUCT)
+            // TODO: Migrate these methods.
+
+            return new CheeseBlock(FabricBlockSettings.copyOf(Blocks.DIRT)
 					.strength(hardness, resistance)
 					.sounds(BlockSoundGroup.NYLIUM)
-					.breakByTool(FabricToolTags.SWORDS)
-					.breakByHand(true)
+                // .breakByTool(FabricToolTags.SWORDS)
+                // .breakByHand(true)
 					.ticksRandomly(),
 					mature_months);
 		}

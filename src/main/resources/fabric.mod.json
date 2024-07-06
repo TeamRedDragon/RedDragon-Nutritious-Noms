@@ -1,37 +1,33 @@
 {
-  "schemaVersion": 1,
-  "id": "nutritiousnoms",
-  "version": "${version}",
-
-  "name": "RedDragon - Nutritious Noms",
-  "description": "RedDragon pres. Nutritious Noms and adds all new food to the game made from vanilla sources!",
-  "authors": [
-    "SophiaAska",
-    "NexiMods",
-	"Jilocasin"
-  ],
-  "contact": {
-    "homepage": "https://github.com/RedDragon/RedDragon-Nutritious-Noms",
-    "sources": "https://github.com/RedDragon/RedDragon-Nutritious-Noms"
-  },
-
-  "license": "MMPLv2",
-  "icon": "assets/nutritiousnoms/icon.png",
-
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "reddragon.nutritiousnoms.NutritiousNomsMod"
-    ]
-  },
-  "mixins": [
-  ],
-
-  "depends": {
-    "fabricloader": ">=0.9.0",
-    "fabric": "*",
-    "minecraft": "1.16.x"
-  },
-  "suggests": {
-  }
+	"schemaVersion": 1,
+	"id": "nutritiousnoms",
+	"version": "${version}",
+	"name": "RedDragon - Nutritious Noms",
+	"description": "RedDragon pres. Nutritious Noms and adds all new food to the game made from vanilla sources!",
+	"authors": [
+		"SophiaAska",
+		"NexiMods",
+		"Jilocasin"
+	],
+	"contact": {
+		"homepage": "https://github.com/RedDragon/RedDragon-Nutritious-Noms",
+		"sources": "https://github.com/RedDragon/RedDragon-Nutritious-Noms"
+	},
+	"license": "MMPLv2",
+	"icon": "assets/nutritiousnoms/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"reddragon.nutritiousnoms.NutritiousNomsMod"
+		]
+	},
+	"mixins": [
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"fabric": ">=0.92.2+1.20.1",
+		"minecraft": ">=1.20.1"
+	},
+	"suggests": {
+	}
 }
