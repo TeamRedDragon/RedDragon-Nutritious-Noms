@@ -11,8 +11,8 @@ import reddragon.nutritiousnoms.content.blocks.CheeseBlock;
 public enum NutritiousNomsBlock implements BlockHolder {
 	// Kitchen Devices
 	// TODO make them work like fuel-less ovens
-	FERMENTER(FabricBlockSettings.copyOf(Blocks.BARREL)),
-	PRESS(FabricBlockSettings.copyOf(Blocks.BARREL)),
+	FERMENTER(FabricBlockSettings.copyOf(Blocks.SMOKER)),
+	PRESS(FabricBlockSettings.copyOf(Blocks.BLAST_FURNACE)),
 
 	// Cheese
 	MOZZERELLA_POT(new CheeseBuilder().mature(1f / 8).hardness(1F).resistance(0.6F).build()),

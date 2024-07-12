@@ -40,7 +40,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
-	def redDragonApiVersion = 'reddragon:reddragon-api:1.0.2'
+	def redDragonApiVersion = 'reddragon:reddragon-api:1.0.3-SNAPSHOT'
 	modApi redDragonApiVersion
     include redDragonApiVersion
 	

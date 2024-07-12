@@ -1,5 +1,5 @@
 {
-"itemGroup.nutritiousnoms": "Pam's HarvestCraft 2 - Food Core",
+"itemGroup.nutritiousnoms": "RedDragon - Nutritious Noms",
 
 "item.nutritiousnoms.choco_cake": "Schokoladenkuchen",
 "item.nutritiousnoms.choco_donut": "Schoko Donut",
@@ -17,7 +17,7 @@
 // Milch
 "item.nutritiousnoms.pasteurized_milk": "Pasteurisierte Milch",
 "item.nutritiousnoms.skimmed_milk": "Magermilch",
-"item.nutritiousnoms.curd_cheese": "Curd_cheese",
+"item.nutritiousnoms.curd_cheese": "Käsebruch",
 "item.nutritiousnoms.pasteurized_skimmed_milk": "Pasteurisierte Magermilch",
 "item.nutritiousnoms.heavy_cream": "Rahm",
 "item.nutritiousnoms.whipped_cream": "Schlagsahne",

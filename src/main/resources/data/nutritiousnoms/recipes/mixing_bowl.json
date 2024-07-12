@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "/",
+        "B"
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "K": {
+            "item": "minecraft:bucket"
+        }
+    },
+    "result": {
+        "item": "nutritiousnoms:mixing_bowl",
+        "count": 1
+    }
+}

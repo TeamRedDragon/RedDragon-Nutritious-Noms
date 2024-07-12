@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "nutritiousnoms:cheddar_wheel",
+		//"nutritiousnoms:cheerus_pot",
+		//"nutritiousnoms:feta_pot",
+		"nutritiousnoms:gorgonzola_wheel",
+		"nutritiousnoms:havati_wheel",
+		//"nutritiousnoms:mozzerella_pot",
+		"nutritiousnoms:parmesan_wheel",
+		"nutritiousnoms:swiss_cheese_wheel"		
+    ]
+}

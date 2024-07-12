@@ -1,0 +1,9 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "tag": "c:milk_buckets"
+    },
+    "result": "nutritiousnoms:item/pasteurized_milk_bucket",
+    "experience": 0.4,
+    "cookingtime": 200
+}

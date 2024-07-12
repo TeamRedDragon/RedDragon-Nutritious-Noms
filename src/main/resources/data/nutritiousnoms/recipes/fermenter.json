@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iPi",
+        "iSi",
+        "iHi"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "P": {
+            "item": "minecraft:piston"
+        },
+        "S": {
+            "item": "minecraft:smoker"
+        },
+        "H": {
+            "item": "minecraft:hopper"
+        }
+    },
+    "result": {
+        "item": "nutritiousnoms:fermenter",
+        "count": 1
+    }
+}

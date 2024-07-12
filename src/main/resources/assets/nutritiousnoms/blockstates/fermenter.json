@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "activated=false": {
+            "model": "nutritiousnoms:block/fermenter"
+        },
+        "activated=true": {
+            "model": "nutritiousnoms:block/fermenter_on"
+        }
+    }
+}

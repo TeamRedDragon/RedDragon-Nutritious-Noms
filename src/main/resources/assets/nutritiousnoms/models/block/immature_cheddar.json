@@ -1,10 +1,10 @@
 {
-    "textures": {
+	"textures": {
     	"all": "nutritiousnoms:block/immature_cheddar"
     },
     "elements": [
         {
-           "from": [ 1, 0, 1 ],
+            "from": [ 1, 0, 1 ],
             "to": [ 15, 14, 15 ],
             "faces": {
             	"down":  { "uv": [8,8, 16,16], "texture": "#all", "cullface": "down" },

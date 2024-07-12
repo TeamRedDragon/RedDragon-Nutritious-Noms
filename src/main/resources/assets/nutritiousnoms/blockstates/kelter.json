@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "activated=false": {
+            "model": "nutritiousnoms:block/kelter"
+        },
+        "activated=true": {
+            "model": "nutritiousnoms:block/kelter_on"
+        }
+    }
+}
