@@ -5,10 +5,8 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
-import reddragon.api.configs.ModItemConfig;
-import reddragon.api.content.ItemHolder;
 
-public enum NutritiousNomsItem implements ItemHolder {
+public enum NutritiousNomsItemDefinition {
 
 	// Tools
 
@@ -34,13 +32,10 @@ public enum NutritiousNomsItem implements ItemHolder {
 
 	// Diary Products
 	// Milk
-	
-	PASTEURIZED_MILK_BUCKET(drinkItemBucket()),
-	PASTEURIZED_MILK_BOTTLE(drinkItemBottle()),
-	SKIMMED_MILK_BUCKET(drinkItemBucket()),
-	SKIMMED_MILK_BOTTLE(drinkItemBottle()),
-	PASTEURIZED_SKIMMED_MILK_BUCKET(drinkItemBucket()),
-	PASTEURIZED_SKIMMED_MILK_BOTTLE(drinkItemBottle()),
+
+	PASTEURIZED_MILK_BUCKET(drinkItemBucket()), PASTEURIZED_MILK_BOTTLE(drinkItemBottle()),
+	SKIMMED_MILK_BUCKET(drinkItemBucket()), SKIMMED_MILK_BOTTLE(drinkItemBottle()),
+	PASTEURIZED_SKIMMED_MILK_BUCKET(drinkItemBucket()), PASTEURIZED_SKIMMED_MILK_BOTTLE(drinkItemBottle()),
 	CURD_CHEESE(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
 	COTTAGE_CHEESE(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
 	HEAVY_CREAM(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
@@ -49,9 +44,9 @@ public enum NutritiousNomsItem implements ItemHolder {
 	CREAM_CHEESE(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
 	YOGHURT(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
 	BUTTER(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
-	MOZZERELLA(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
-	MOZZERELLA_SLICES(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
-	GRATED_MOZZERELLA(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
+	MOZZARELLA(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
+	MOZZARELLA_SLICES(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
+	GRATED_MOZZARELLA(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F).build())),
 	HAVARTI(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F)
 			.statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1), 1f).build())),
 	HAVARTI_SLICES(foodItem(new FoodComponent.Builder().hunger(1).saturationModifier(1F)
@@ -99,40 +94,35 @@ public enum NutritiousNomsItem implements ItemHolder {
 			.statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 4), 1f).build())),
 	GRATED_CHEESE_MIX(foodItem(new FoodComponent.Builder().hunger(3).saturationModifier(3F).build()));
 
-	private final ModItemConfig config;
+	private final Item item;
 
-	NutritiousNomsItem(Item.Settings settings){
-		this.config = new ModItemConfig(settings);
+	NutritiousNomsItemDefinition(Item.Settings settings) {
+		this.item = new Item(settings);
 	}
 
-	@Override
 	public Item getItem() {
-		return null;
-	}
-
-	public ModItemConfig getConfig() {
-		return config;
+		return item;
 	}
 
 	// Helper methods
-		public static Item.Settings basicItem() {
-			return new Item.Settings();
-		}
+	public static Item.Settings basicItem() {
+		return new Item.Settings();
+	}
 
-		public static Item.Settings foodItem(FoodComponent food) {
-			return new Item.Settings().food(food);
-		}
+	public static Item.Settings foodItem(FoodComponent food) {
+		return new Item.Settings().food(food);
+	}
 
-		public static Item.Settings bowlFoodItem(FoodComponent food) {
-			return new Item.Settings().food(food).recipeRemainder(Items.BOWL).maxCount(16);
-		}
+	public static Item.Settings bowlFoodItem(FoodComponent food) {
+		return new Item.Settings().food(food).recipeRemainder(Items.BOWL).maxCount(16);
+	}
 
-		public static Item.Settings drinkItemBottle() {
-			return new Item.Settings().recipeRemainder(Items.GLASS_BOTTLE).maxCount(16);
-		}
-		
-		public static Item.Settings drinkItemBucket() {
-			return new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1);
-		}
-	
+	public static Item.Settings drinkItemBottle() {
+		return new Item.Settings().recipeRemainder(Items.GLASS_BOTTLE).maxCount(16);
+	}
+
+	public static Item.Settings drinkItemBucket() {
+		return new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1);
+	}
+
 }

@@ -19,6 +19,9 @@
 	"entrypoints": {
 		"main": [
 			"reddragon.nutritiousnoms.NutritiousNomsMod"
+		],
+		"client": [
+			"reddragon.nutritiousnoms.NutritiousNomsClient"
 		]
 	},
 	"mixins": [

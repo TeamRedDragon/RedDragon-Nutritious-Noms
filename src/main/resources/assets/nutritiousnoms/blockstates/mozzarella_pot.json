@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "matureness=0": {
+      "model": "nutritiousnoms:block/immature_mozzarella"
+    },
+    "matureness=1": {
+      "model": "nutritiousnoms:block/immature_mozzarella"
+    },
+    "matureness=2": {
+      "model": "nutritiousnoms:block/immature_mozzarella"
+    },
+    "matureness=3": {
+      "model": "nutritiousnoms:block/immature_mozzarella"
+    },
+    "matureness=4": {
+      "model": "nutritiousnoms:block/immature_mozzarella"
+    },
+    "matureness=5": {
+      "model": "nutritiousnoms:block/immature_mozzarella"
+    },
+    "matureness=6": {
+      "model": "nutritiousnoms:block/immature_mozzarella"
+    },
+    "matureness=7": {
+      "model": "nutritiousnoms:block/immature_mozzarella"
+    },
+    "matureness=8": {
+      "model": "nutritiousnoms:block/immature_mozzarella"
+    },
+    "matureness=9": {
+      "model": "nutritiousnoms:block/immature_mozzarella"
+    },
+    "matureness=10": {
+      "model": "nutritiousnoms:block/immature_mozzarella"
+    },
+    "matureness=11": {
+      "model": "nutritiousnoms:block/mature_mozzarella"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "nutritiousnoms:item/grated_mozerella"
+        "layer0": "nutritiousnoms:item/skimmed_milk_bottle"
     }
 }

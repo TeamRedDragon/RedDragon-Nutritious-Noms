@@ -9,7 +9,7 @@
           			"children": [
             			{
               				"type": "minecraft:item",
-              				"name": "nutritiousnoms:mozerella",
+              				"name": "nutritiousnoms:mozzarella",
               				"functions": [
 				                {
 				                  "function": "minecraft:set_count",
@@ -19,7 +19,7 @@
               				"conditions": [
                					{
 									"condition": "minecraft:block_state_property",
-					                "block": "nutritiousnoms:mozerella_pot",
+					                "block": "nutritiousnoms:mozzarella_pot",
 					                "properties": {
 					                		"matureness": "11"
                   					}
@@ -28,7 +28,7 @@
                        },
             			{
               				"type": "minecraft:item",
-              				"name": "nutritiousnoms:mozerella_pot"
+              				"name": "nutritiousnoms:mozzarella_pot"
                        }
                     ]
 				}

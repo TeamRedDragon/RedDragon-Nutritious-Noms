@@ -20,12 +20,12 @@ repositories {
 }
 
 loom {
-    //splitEnvironmentSourceSets()
+    splitEnvironmentSourceSets()
 
 	mods {
 		"modid" {
 			sourceSet sourceSets.main
-			//sourceSet sourceSets.client
+			sourceSet sourceSets.client
 		}
 	}
 
@@ -40,9 +40,11 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
+	/* Temporary excluded until API will be used again
 	def redDragonApiVersion = 'reddragon:reddragon-api:1.0.3-SNAPSHOT'
 	modApi redDragonApiVersion
     include redDragonApiVersion
+    */
 	
 }
 

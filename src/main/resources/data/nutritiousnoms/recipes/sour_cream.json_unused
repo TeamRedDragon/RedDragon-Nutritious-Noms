@@ -3,7 +3,7 @@
     "ingredient": {
         "tag": "nutritiousnoms:item/heavy_cream"
     },
-    "result": "nutritiousnoms:item/sour_cream",
+    "result": "nutritiousnoms:sour_cream",
     "experience": 0.1,
     "cookingtime": 1000
 }
